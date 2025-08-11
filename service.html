@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | BBS Restaurant</title>
+  <style>
+    body {
+      background-color: white;
+      color: #2d3748; /* gray-800 */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #1a202c; /* gray-900 */
+      color: white;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f56565; /* red-400 */
+    }
+    nav a.active {
+      color: #f56565;
+      font-weight: bold;
+    }
+
+    /* Services Section */
+    section {
+      padding: 5rem 1.5rem;
+    }
+    section h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .service-card {
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      color: #718096; /* gray-600 */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a202c; /* gray-900 */
+      color: #a0aec0; /* gray-400 */
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>BBS Restaurant</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Dine-In</h3>
+        <p>Enjoy gourmet meals in a warm, relaxing environment with top-tier service.</p>
+      </div>
+      <div class="service-card">
+        <h3>Takeaway & Delivery</h3>
+        <p>Order online and get your favorite meals delivered fresh to your doorstep.</p>
+      </div>
+      <div class="service-card">
+        <h3>Catering</h3>
+        <p>Custom menus for events, celebrations, and corporate gatherings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BBS Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
