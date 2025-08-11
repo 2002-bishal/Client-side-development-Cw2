@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | BBS Restaurant</title>
+  <style>
+    body {
+      background-color: white;
+      color: #2d3748; /* gray-800 */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* Header */
+    header {
+      background-color: #1a202c; /* gray-900 */
+      color: white;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f56565; /* red-400 */
+    }
+    nav a.active {
+      color: #f56565;
+      font-weight: bold;
+    }
+
+    /* Contact Section */
+    section {
+      background-color: #f7fafc; /* gray-100 */
+      padding: 5rem 1.5rem;
+    }
+    section h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    form {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    form div {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db; /* gray-300 */
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 8rem;
+      resize: vertical;
+    }
+    button {
+      background-color: #e53e3e; /* red-600 */
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #c53030; /* red-700 */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a202c; /* gray-900 */
+      color: #a0aec0; /* gray-400 */
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>BBS Restaurant</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Get in Touch</h2>
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" />
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea placeholder="Your message..."></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BBS Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
