@@ -1,12 +1,12 @@
 body {
       background-color: white;
-      color: #2d3748; /* gray-800 */
+      color: #2d3748; 
       margin: 0;
       font-family: Arial, sans-serif;
     }
     
     header {
-      background-color: #1a202c; /* gray-900 */
+      background-color: lightslategray; 
       color: white;
       padding: 1rem;
     }
@@ -87,7 +87,7 @@ body {
 
     
     footer {
-      background-color: #1a202c;
+      background-color: #6381c5;
       color: #a0aec0; 
       text-align: center;
       padding: 1.5rem;

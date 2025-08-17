@@ -75,16 +75,39 @@
     </div>
   </div>
 </section>
-   
-    
+  
 
-
- 
 <section class="reservation-section">
   <h2 class="section-title light">Reserve Your Table</h2>
   <p class="reservation-text">Book a table online and enjoy a memorable evening with us.</p>
-  <a href="#" class="reservation-btn">Book Now</a>
+  <a href="javascript:void(0)" class="reservation-btn" onclick="openReservation()">Book Now</a>
 </section>
+
+
+<div id="reservationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeReservation()">&times;</span>
+    <h3>Table Reservation</h3>
+    <form id="reservationForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" id="time" required>
+
+      <label for="guests">Guests</label>
+      <input type="number" id="guests" min="1" max="20" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
 
  
 <footer class="footer">
