@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | BBS Restaurant</title>
   <link rel="stylesheet" href="about.css">
+  <style>
+     body {
+      background-color: white;
+      color: #2d3748; 
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    
+    header {
+      background-color: #1a202c; 
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f56565; 
+    }
+    nav a.active {
+      color: #f56565;
+      font-weight: bold;
+    }
+
+    
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    
+    section {
+      padding: 5rem 1.5rem;
+      background-color: #f7fafc; 
+    }
+    section h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.125rem;
+      color: #4a5568; 
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      text-align: center;
+    }
+
+    
+    .story {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+    .story img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .story-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .story-text h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+  
+    footer {
+      background-color: #1a202c;
+      color: #a0aec0; 
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
 
-  
+
   <header>
     <div class="container">
       <h1>BBS Restaurant</h1>
@@ -22,11 +162,34 @@
     </div>
   </header>
 
-
-  <section>
-    <div style="text-align: center;">
+  
+  <section class="hero">
+    <div class="hero-content">
       <h2>About BBS Restaurant</h2>
-      <p>BBS Restaurant is a cozy and modern eatery offering a diverse menu crafted with fresh ingredients and global flavors. We pride ourselves on exceptional service and a passion for culinary excellence. Our mission is to create a welcoming space where food brings people together.</p>
+      <p>Where flavors meet hospitality.</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <p>BBS Restaurant is a cozy and modern eatery offering a diverse menu crafted with fresh ingredients and global flavors. We pride ourselves on exceptional service and a passion for culinary excellence. Our mission is to create a welcoming space where food brings people together.</p>
+    
+    
+    <div class="story">
+      <img src="img/aboutbackground.jpg" alt="Restaurant Interior">
+      <div class="story-text">
+        <h3>Our Story</h3>
+        <p>Founded in 2020, BBS Restaurant started as a small family-owned kitchen and has grown into a community hub where guests can enjoy authentic flavors with a modern twist. Our chefs blend traditional recipes with creative innovation, ensuring every dish tells a story.</p>
+      </div>
+    </div>
+
+    
+    <h2>Our Space</h2>
+    <div class="gallery">
+      <img src="img/dish1.jpg" alt="Dining Area">
+      <img src="img/selroti.webp" alt="Food Plate">
+      <img src="img/dish2.jpg" alt="Table Setup">
+      <img src="img/momo2.webp" alt="Restaurant View">
     </div>
   </section>
 
