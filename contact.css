@@ -1,0 +1,94 @@
+body {
+      background-color: white;
+      color: #2d3748; /* gray-800 */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      background-color: #1a202c; /* gray-900 */
+      color: white;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f56565; 
+    }
+    nav a.active {
+      color: #f56565;
+      font-weight: bold;
+    }
+
+    
+    section {
+      background-color: #f7fafc; 
+      padding: 5rem 1.5rem;
+    }
+    section h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    form {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    form div {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db; 
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 8rem;
+      resize: vertical;
+    }
+    button {
+      background-color: #e53e3e; 
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #c53030; 
+    }
+
+    
+    footer {
+      background-color: #1a202c;
+      color: #a0aec0; 
+      text-align: center;
+      padding: 1.5rem;
+    }
