@@ -182,12 +182,16 @@
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
+  margin-top: 10
 }
 
 .reservation-btn:hover {
   background: #f0f0f0;
 }
 
+.reservation-text {
+  padding-bottom: 28px;
+}
 
 .modal {
   display: none;
@@ -209,11 +213,40 @@
 }
 
 .close {
+  position: absolute;
   float: right;
   font-size: 1.5rem;
   cursor: pointer;
+  font-size: 15px;
+  top: 10px;
+}
+#reservationForm label,
+#reservationForm input,
+#reservationForm button {
+  display: block;
+  width: 100%; 
+  margin-bottom: 15px; 
 }
 
+#reservationForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#reservationForm button {
+  background: #e53935;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reservationForm button:hover {
+  background: #c62828;
+}
 
 .footer {
   background: #1a1a1a;
